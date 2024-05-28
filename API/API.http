@@ -1,0 +1,35 @@
+@API_HostAddress = https://localhost:7266
+
+GET {{API_HostAddress}}/pizza/
+Accept: application/json
+
+###
+
+POST {{API_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{API_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Hawaiiana",
+    "isGlutenFree": false
+}
+
+###
+
+GET {{API_HostAddress}}/pizza/query?id=4
+
+###
+
+DELETE {{API_HostAddress}}/pizza?id=4
+
+###
