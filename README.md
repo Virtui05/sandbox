@@ -1,1 +1,2 @@
-# Repository used to learn about Angular and .Net
+# Sandbox repository
+Repo used to learn about Angular and .Net
